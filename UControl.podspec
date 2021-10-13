@@ -13,7 +13,7 @@ This CocoaPods library helps you perform calculation.
   spec.author       = { "Maksym" => "maksym.vechirko@axiomc.com" }
 
   #spec.ios.deployment_target = "9.1"
-  #spec.swift_version = "4.2"
+  spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/Moskwinow/UControl.git", :tag => "#{spec.version}" }
   spec.source_files  = "UControl/**/*.{h,m,swift}"
