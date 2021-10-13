@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TestLibLoginController: UIViewController {
+public class TestLibLoginController: UIViewController {
     
     private lazy var nextButton: UIButton = {
         let l = UIButton(frame: .init(x: 0, y: 0, width: 150, height: 50))
@@ -21,25 +21,29 @@ final class TestLibLoginController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
         view.addSubview(nextButton)
     }
     
-    override func viewDidLayoutSubviews() {
+    open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         nextButton.center = view.center
     }
     
-    @objc private func nextView() {
+   fileprivate func performToLogged() {
         let nextView = TestLibLoggedController()
         nextView.modalPresentationStyle = .fullScreen
         self.present(nextView, animated: true, completion: nil)
+    }
+    
+    @objc private func nextView() {
+        performToLogged()
     }
 }
 
