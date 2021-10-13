@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B4A86FF62716C5050095670D /* UControl.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A86FF42716C5050095670D /* UControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4A86FFF2716C51B0095670D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A86FFD2716C51B0095670D /* LoginController.swift */; };
+		B4A870002716C51B0095670D /* LoggedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A86FFE2716C51B0095670D /* LoggedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4A86FF12716C5050095670D /* UControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A86FF42716C5050095670D /* UControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UControl.h; sourceTree = "<group>"; };
 		B4A86FF52716C5050095670D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A86FFD2716C51B0095670D /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B4A86FFE2716C51B0095670D /* LoggedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		B4A86FF32716C5050095670D /* UControl */ = {
 			isa = PBXGroup;
 			children = (
+				B4A86FFE2716C51B0095670D /* LoggedController.swift */,
+				B4A86FFD2716C51B0095670D /* LoginController.swift */,
 				B4A86FF42716C5050095670D /* UControl.h */,
 				B4A86FF52716C5050095670D /* Info.plist */,
 			);
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					B4A86FF02716C5050095670D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A86FFF2716C51B0095670D /* LoginController.swift in Sources */,
+				B4A870002716C51B0095670D /* LoggedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		B4A86FFA2716C5050095670D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5CF8RPL35M;
@@ -277,6 +287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Moskwinow.app.UControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +296,7 @@
 		B4A86FFB2716C5050095670D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5CF8RPL35M;
